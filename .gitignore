@@ -67,4 +67,5 @@ CTestTestfile.cmake
 _deps
 
 # slef
+cmake-build-debug
 .idea
