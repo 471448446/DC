@@ -76,7 +76,7 @@ int main(int argc, char const *argv[])
     char *ff95 = "Hello Tesla";
     // 两个指针指向同一块内存，是指针的地址赋值 ，属于浅拷贝 ？？
     ff93 = ff92;
-    // 这句会报错的，接受拷贝数据的是ff93指针，指针是不能接受拷贝的
+    // 这句会报错的，接受拷贝数据的是ff93指针，指针是不能接受拷贝的。 从后面`memory_mangage.c`看出需要先分配存储才行
     // strcpy(ff93,ff92);
     // 第一个参数只能算是数组？？，第二个参数可以是指针，数组 WTF
     strcpy(ff94,ff92);
