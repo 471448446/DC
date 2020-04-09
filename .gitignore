@@ -1,3 +1,14 @@
+# slew
+
+#忽略可执行文件 https://www.zhihu.com/question/26247816
+*
+!*.*
+!*/
+
+cmake-build-debug
+.idea
+
+
 # https://github.com/github/gitignore/blob/master/C.gitignore
 
 # Prerequisites
@@ -65,7 +76,3 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
-
-# slef
-cmake-build-debug
-.idea
