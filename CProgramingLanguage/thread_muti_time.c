@@ -92,7 +92,9 @@ long con_execution(){
 
 	for (int i = 0; i < g_thread; ++i)
 	{
+		//调用 join 的线程会阻塞，可能会等待被join的线程执行完成才执行下一个句。
 		pthread_join(threads[i],NULL);
+		// printf("join end %d\n", i);
 	}
 	// simple_task(0);
 

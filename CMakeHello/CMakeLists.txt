@@ -3,4 +3,5 @@ project(Hello C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Hello main.c)
+file(GLOB SRC_FILES "cpp/hello/*.c*")
+add_executable(hello_c ${SRC_FILES})
