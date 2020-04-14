@@ -103,5 +103,7 @@ int main(int argc, char const *argv[])
     // 这个在运行时会报错，因为修改了常量区的内容
     // ff92[0] = 'h';
 
+    printf("--------------拼接------------\n");
+    // todo
     return 0;
 }
