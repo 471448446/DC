@@ -40,5 +40,20 @@ int main(int argc, char const *argv[])
 	/*------释放内存-------*/ 
 	// 当程序退出时，操作系统会自动释放所有分配给程序的内存，但是，建议您在不需要内存时，都应该调用函数 free() 来释放内存。
 	free(largeName);
+
+	int * array;
+
+	array = (int*)malloc(sizeof(int)*4);
+	if (array)
+	{
+		for (int i = 0; i < 4; ++i)
+		{
+			array[i] = i;
+			array[i]++;
+			printf("arrary[%d]:%d\n",i,array[i] );
+		}
+	}
+	
+	free(array);
 	return 0;
 }
